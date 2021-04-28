@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background: #EDF1F4;
+}
+
+.container{
+  width:100%;
+  max-width:1438px;
+  padding: 0 15px;
 }
 
 .App-logo {
