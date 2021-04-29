@@ -1,6 +1,12 @@
 .App {
   text-align: center;
   background: #EDF1F4;
+  max-width: 1571px;
+  margin: 0 auto;
+}
+
+li{
+  list-style: none;
 }
 
 .container{
