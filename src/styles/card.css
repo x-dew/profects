@@ -1,0 +1,176 @@
+.card {
+    max-width: 444px;
+}
+
+.card-img {
+    background-image: url("../img/card-img.png");
+    width: 100%;
+    height: 100%;
+    min-height: 172px;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img p {
+    margin: 0;
+    text-align: start;
+}
+
+.card-img a {
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    background: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.card-img span {
+    font-weight: 700;
+}
+
+.card-img__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-number {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    text-align: start;
+    margin: 0 !important;
+    padding: 0 15px;
+}
+
+.card-company {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-align: start;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    margin-top: -4px!important;
+}
+
+.card-company__logo {
+    width: 23px;
+    height: 23px;
+    background: #58BF91;
+    box-shadow: 0px 4px 4px rgba(88, 191, 145, 0.38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+}
+
+.card-company__logo p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    top: 13%;
+    left: 13%
+}
+
+.card-texts {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    text-align: start;
+    max-width: 380px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.card-security p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #A4B6C2;
+    text-align: start;
+    padding: 0 15px;
+}
+
+.card-security span {
+    color: #58BF91;
+
+}
+
+.card-bottom {
+    text-align: end;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.progress-card {
+    padding: 0 15px;
+}
+
+.bottom {
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #58BF8F !important;
+    background: #E3F4EC !important;
+    border-radius: 5px !important;
+    border: none !important;
+    margin-top: 20px;
+}
+
+.card-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 33px;
+    border-top: 2px solid rgba(164, 182, 194, 0.5);
+    border-bottom: 2px solid rgba(164, 182, 194, 0.5);
+}
+
+.card-body {
+    padding: 15px 0 0 0 !important;
+}
+
+.card-table h3 {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.border-card {
+    border-left: 2px solid rgba(164, 182, 194, 0.5);
+    border-right: 2px solid rgba(164, 182, 194, 0.5);
+    width: 100%;
+}
+
+.card-table p {
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: lowercase;
+    color: #A4B6C2;
+    margin: 0 0 12px 0;
+}
