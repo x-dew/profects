@@ -1,8 +1,16 @@
 .App {
   text-align: center;
   background: #EDF1F4;
-  max-width: 1571px;
+  max-width: 1601px;
   margin: 0 auto;
+  padding-bottom: 135px;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 li{
@@ -11,7 +19,7 @@ li{
 
 .container{
   width:100%;
-  max-width:1438px;
+  max-width:1468px!important;
   padding: 0 15px;
 }
 
