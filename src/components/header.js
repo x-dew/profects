@@ -5,9 +5,7 @@ import {CustomInput, Form, FormGroup, Label} from 'reactstrap';
 
 const Header = (props) => {
 
-    const {section, setFilter, setSection, filter} = props
-    let sections = section.concat()
-
+    const {section, setFilters, filter, input} = props
 
     return (
         <div className='header flex'>
@@ -15,17 +13,25 @@ const Header = (props) => {
                 <h1>Все проекты</h1>
                 <div>
                     <ul className='flex header-list'>
-                        <li onClick={() => {
-                            setSection(null)
-                        }} className={filter.section === null ? 'active-list' : ''}>Все
+                        <li
+                            onClick={() => {
+                                setFilters('section', null)
+                            }}
+                            className={filter.section === null ? 'active-list' : ''}
+                        >
+                            Все
                         </li>
                         {
-                            sections.map((value, index) => {
-                                return <li className={filter.section === value.id ? 'active-list' : ''}
+                            section.map((value, index) => {
+                                return <li
+                                    className={filter.section === value.id ? 'active-list' : ''}
                                     onClick={(event) => {
-                                        setSection(value.id)
-                                    }
-                                    } key={index}>{value.name}</li>
+                                        setFilters('section', value.id)
+                                    }}
+                                    key={index}
+                                >
+                                    {value.name}
+                                </li>
                             })
                         }
                     </ul>
@@ -33,9 +39,16 @@ const Header = (props) => {
             </div>
             <div>
                 <Form>
-                    <FormGroup className='form-switch flex'>
+                    <FormGroup style={{cursor: 'pointer'}} className='form-switch flex'>
                         <p>Только доступные к инвестированию </p>
-                        <CustomInput type="switch" id="exampleCustomSwitch" name="customSwitch"/>
+                        <CustomInput
+                            type="switch"
+                            id="exampleCustomSwitch"
+                            name="customSwitch"
+                            onClick={() => {
+                                setFilters('position', !filter.position)
+                            }}
+                        />
                     </FormGroup>
                 </Form>
             </div>

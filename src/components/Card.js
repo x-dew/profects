@@ -12,7 +12,9 @@ export const Card = (props) => {
     const {project, sections} = props
     return (
         <Cards className='card mb-5 w-444'>
-            <div className='card-img'>
+            <div className={
+                sections.find(value => value.id === project.section_id).name === 'Займы' ? 'card-img' : 'card-img-2'
+            }>
                 <div className='card-img__text'>
                     <a href="#">{
                         sections.find(value => value.id === project.section_id).name
@@ -35,9 +37,14 @@ export const Card = (props) => {
                     }</span></p>
                 </div>
                 <div className='progress-card'>
-                    <Progress multi>
-                        <Progress bar color="success" value="40"/>
-                    </Progress>
+                    {
+                        sections.find(value => value.id === project.section_id).name === 'Займы' ?
+                            <Progress multi>
+                                <Progress bar color="success" value="40"/>
+                            </Progress> : ''
+
+                    }
+
                 </div>
                 <div className='card-table'>
                     <div style={{width: '100%'}}>
@@ -45,7 +52,7 @@ export const Card = (props) => {
                         <p>доходность</p>
                     </div>
                     <div className='border-card'>
-                        <h3>{project.targetAmount}</h3>
+                        <h3>{project.targetAmount.toLocaleString('ru')}</h3>
                         <p>Целевая сумма</p>
                     </div>
                     <div style={{width: '100%'}}>
